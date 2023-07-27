@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가깝고 편리한 행복충전소, 세븐일레븐</title>
+  <!-- swiper -->
+  <link rel="stylesheet" href="swiper.min.css">
+  <!-- xeicon -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"/>
+  <!-- css -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive/resMain.css">
+</head>
+<body>
+<div class="container"> <!-- 포지션 스티키를 사용하기위한 컨테이너 -->
+    <!-- 헤더(header)시작 -->
+    <header>  
+      <div class="headerDesktop">
+        <!-- 고객센터/ 채용안내/ 점주인증 -->
+        <div class="headerTop">
+          <div class="headerRnb">
+            <ul>
+              <li><a href="support.html">고객센터</a></li> <!-- 비포값으로 ㅣ 표현 -->
+              <li><a href="#">채용안내</a></li>
+              <li><a href="#">점주인증</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 로고/ gnb /언어 -->
+        <div class="headerBottom">
+          <div class="headerLogo">
+            <a href="index.html"><img src="img/header-img/7Eleven-orig.png" alt=""></a>
+          </div>
+          <!-- 메뉴 -->
+          <div class="headerGnb">
+            <ul class="destopGnb">
+              <div class="destopSubBg"></div>
+              <li>
+                <a href="product.html">상품안내</a>
+                <ul class="lnb">
+                  <li><a href="product.html">전체상품</a></li>
+                  <li><a href="#">행사상품</a></li>
+                  <li><a href="#">차별화상품</a></li>
+                  <li><a href="#">Fresh Food</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">서비스</a>
+                <ul class="lnb">
+                  <li><a href="#">APP 서비스</a></li>
+                  <li><a href="#">생활 서비스</a></li>
+                  <li><a href="#">제휴 서비스</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">7-ELEVEN</a>
+                <ul class="lnb">
+                  <li><a href="#">매장찾기</a></li>
+                  <li><a href="#">회사소개</a></li>
+                  <li><a href="#">경영안내</a></li>
+                  <li><a href="#">채용안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">이벤트</a>
+                <ul class="lnb">
+                  <li><a href="#">진행중인 이벤트</a></li>
+                  <li><a href="#">종료된 이벤트</a></li>
+                  <li><a href="#">어린이 미술대회</a></li>
+                  <li><a href="#">온라인 갤러리</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">창업안내</a>
+                <ul class="lnb">
+                  <li><a href="#">창업가이드</a></li>
+                  <li><a href="#">창업설명회</a></li>
+                  <li><a href="#">창업상담</a></li>
+                  <li><a href="#">창업성공기</a></li>
+                  <li><a href="#">추천매장소개</a></li>
+                  <li><a href="#">경영주계약서소개</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- 언어선택 -->
+          <div class="headerLanguage">
+            <span class="firstSelect">한국어</span>
+            <ul class="language">
+              <li><a href="#">한국어</a></li>
+              <li><a href="https://www.sej.co.jp/index.html" target="_blank">일본어</a></li>
+              <li><a href="https://www.7-eleven.com/" target="_blank">영어</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 모바일 gnb -->
+      <div class="mobileGnb">
+        <div class="mobLogo">
+          <a href="index.html"><img src="img/header-img/7Eleven-orig.png" alt=""></a>
+        </div>
+        <!-- 버튼 -->
+        <span class="mobMenuBtn"></span>
+        <!-- 버튼을 누르면 메뉴가 오른쪽에서 나타남 -->
+        <div class="mobMenu">
+          <div class="mobHeaderChage">
+            <div class="mobLogoIn">
+              <a href="index.html"><img src="img/header-img/7Eleven-white.png" alt=""></a>
+            </div>
+            <span class="mobClose"></span>
+            <div class="firstBg"></div>
+            <div class="secondBg"></div>
+            <div class="thirdBg"></div>
+          </div>
+          <div class="mobInner">
+            <div class="mobGnb">
+              <ul class="gnb">
+                <li class="mobcontent">
+                  <!-- 상단 버튼 -->
+                  <a href="#" class="collapsible">상품안내<span class="colarrow"></span></a>
+                  <!-- 버튼누르면 펼쳐짐 -->
+                  <ul class="content">
+                    <li><a href="product.html">전체상품</a></li>
+                    <li><a href="#">행사상품</a></li>
+                    <li><a href="#">차별화상품</a></li>
+                    <li><a href="#">Fresh Food</a></li>
+                  </ul>
+                </li>
+                <li class="mobcontent">
+                  <a href="#" class="collapsible">서비스<span class="colarrow"></span></a>
+                  <ul class="content">
+                    <li><a href="#">APP 서비스</a></li>
+                    <li><a href="#">생활 서비스</a></li>
+                    <li><a href="#">제휴 서비스</a></li>
+                  </ul>
+                </li>
+                <li class="mobcontent">
+                  <a href="#" class="collapsible">7-ELEVEN<span class="colarrow"></span></a>
+                  <ul class="content">
+                    <li><a href="#">매장찾기</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">경영안내</a></li>
+                    <li><a href="#">채용안내</a></li>
+                  </ul>
+                </li>
+                <li class="mobcontent">
+                  <a href="#" class="collapsible">이벤트<span class="colarrow"></span></a>
+                  <ul class="content">
+                    <li><a href="#">진행중인 이벤트</a></li>
+                    <li><a href="#">종료된 이벤트</a></li>
+                    <li><a href="#">어린이 미술대회</a></li>
+                    <li><a href="#">온라인 갤러리</a></li>
+                  </ul>
+                </li>
+                <li class="mobcontent">
+                  <a href="#" class="collapsible">창업안내<span class="colarrow"></span></a>
+                  <ul class="content">
+                    <li><a href="#">창업가이드</a></li>
+                    <li><a href="#">창업설명회</a></li>
+                    <li><a href="#">창업상담</a></li>
+                    <li><a href="#">창업성공기</a></li>
+                    <li><a href="#">추천매장소개</a></li>
+                    <li><a href="#">경영주계약서소개</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="mobTopMenu">
+              <a href="support.html" class="mobCustomer">고객센터</a>
+              <a href="#" class="mobHire">채용안내</a>
+              <a href="#" class="mobManager">점주인증</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 헤더 끝 -->
+    <!-- 메인1(main)시작 -->
+    <main>
+      <!-- 섹션01 비주얼(visual) -->
+      <section class="visual">
+        <div class="visualSlider">
+          <ul class="sliderBanner">
+            <li><a href="#"><div class="visualImg visualImg01"></div></a></li>
+            <li><a href="#"><div class="visualImg visualImg02"></div></a></li>
+            <li><a href="#"><div class="visualImg visualImg03"></div></a></li>
+            <li><a href="#"><div class="visualImg visualImg04"></div></a></li>
+            <li><a href="#"><div class="visualImg visualImg05"></div></a></li>
+          </ul>
+        </div>
+        <div class="arrowBtn">
+          <span class="vBtn visualPrev">이전</span>
+          <span class="vBtn visualNext">다음</span>
+        </div>
+      </section>
+  
+      <!-- 섹션02 행사 상품(productEvent) -->
+      <section class="productEvent">
+        <div class="inner tab_wrap">
+          <!-- 탭메뉴 제목 -->
+          <div class="productLnb">
+            <div class="productTitle">
+                <h2>행사 상품</h2>
+                <div class="plusButton">
+                  <a href="product.html">
+                    <span>전체보기</span>
+                    <div class="plusIcon"></div>
+                  </a>
+                </div>
+            </div>
+            <ul class="tit_list">
+                <!-- 디폴트 선택 li에 active 클래스 추가 -->
+                <li class="active"><a href="#con01">1+1</a></li>
+                <li><a href="#con02">2+1</a></li>
+                <li><a href="#con03">할인행사</a></li>
+                <li><a href="#con04">증정행사</a></li>
+            </ul>
+          </div>
+          <!-- 탭메뉴 컨텐츠 -->
+          <div class="tab_con">
+              <div id="con01" class="tab_list"> <!-- productSlide -->
+                  <!-- swiper-slide -->
+                  <div class="slider"><!-- slider -->
+                      <div class="tabInner"><!-- tabInner -->
+                          <ul class="swiper-wrapper slide_list">
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg"alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/딸기.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>딸기우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/커피1.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>아메리카노오리지널</p>
+                                        <span>2,300원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/커피2.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>아메리카노마일드</p>
+                                        <span>2,300원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/닥터캡슐프로텍트.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>닥터캡슐플레인</p>
+                                        <span>2,100원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/수박우유.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>수박우유</p>
+                                        <span>1,600원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/요거톡1.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코그레놀라</p>
+                                        <span>2,200원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/sec02-product-img/1+1/요거톡2.jpg" alt="">
+                                    <div class="productTextWrap">
+                                      <p>요거톡스타볼</p>
+                                      <span>2,200원</span>
+                                    </div>
+                                  </a>
+                            </li>
+                          </ul>
+                      </div>
+                      <span class="paginationCount"></span>
+                  </div>
+              </div>
+                  
+              <div id="con02" class="tab_list">
+                  <!-- swiper-slide -->
+                  <div class="slider">
+                      <div class="tabInner">
+                          <ul class="swiper-wrapper slide_list">
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <span class="paginationCount"></span>
+                  </div>
+              </div>
+      
+              <div id="con03" class="tab_list">
+                  <!-- swiper-slide -->
+                  <div class="slider">
+                      <div class="tabInner">
+                          <ul class="swiper-wrapper slide_list">
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <span class="paginationCount"></span>
+                  </div>
+              </div>
+  
+              <div id="con04" class="tab_list">
+                  <!-- swiper-slide -->
+                  <div class="slider">
+                      <div class="tabInner">
+                          <ul class="swiper-wrapper slide_list">
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                              <li class="swiper-slide">
+                                  <a href="#">
+                                      <img src="img/sec02-product-img/1+1/초코.jpg" alt="">
+                                      <div class="productTextWrap">
+                                        <p>초코우유</p>
+                                        <span>1,500원</span>
+                                      </div>
+                                    </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <span class="paginationCount"></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+  
+      <!-- 섹션03 도시락 서비스(packLunch) -->
+      <section class="packLunch">
+        <div class="packLuchBg"></div> <!-- 이미지 삽입 -->
+        <div class="packDesc">
+          <h2>오직 7-ELEVEN</h2> <!-- after로 주황색 줄 넣기 -->
+          <p>바쁜 직장인을 위한<br>도시락 예약 주문 서비스</p>
+        </div>
+      </section>
+  
+      <!-- 섹션05 편의점 검색(search) -->
+      <section class="search">
+        <div class="inner searchInner">
+          <!-- 왼쪽:우리 동네 세븐일레븐 -->
+          <div class="leftSearch">
+            <div class="searchWrap">
+              <div class="leftDesc">
+                <h2>우리 동네 <span>7-</span><span>E</span><span>L</span><span>EVEN</span></h2>
+                <p>근처에 있는 매장을 찾아보세요!</p>
+              </div>
+              <!-- 검색창 -->
+              <div class="nearSearch">
+                <div class="nearSearchBar">
+                  <input type="text" id="typingSearch" placeholder="점포명 혹은 OO동을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='점포명 혹은 OO동을 입력하세요.'" />
+                  <input type="submit" id="searchSubmit" class="searchIcon" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 오른쪽:세븐일레븐 건물사진 -->
+          <div class="rightSearch"></div>
+        </div>
+      </section>
+  
+    </main>
+    <!-- 메인1 끝 -->
+
+</div>
+
+  <!-- 메인2(main)시작 -->
+  <main>
+    <!-- 섹션06 창업 (startup) -->
+    <section class="startup">
+      <div class="inner startupInner">
+        <div class="startupHeadText">
+          <h2>상생, 협력<br>그리고 더 큰 희망</h2>
+          <p>가치를 공유하고 함께 나아간다면,<br>성공은 언제나 우리의 것입니다.</p>
+        </div>
+        <div class="contentsWrap">
+          <div class="leftCard">
+            <div class="leftCardImg">
+              <img src="img/sec06-startup-img/창업상담.png" alt="">
+            </div>
+            <div class="leftCardDesc">
+              <h3>창업상담</h3>
+              <p>최고의 상품과 서비스로<br>성공 창업을 도와드립니다.</p>
+            </div>
+            <div class="leftCardImg">
+              <img src="img/sec06-startup-img/설명회-채택.png" alt="">
+            </div>
+            <div class="leftCardDesc">
+              <h3>창업설명회</h3>
+              <p>가맹점 오픈에 따른<br>다양한 지원과 혜택을<br>알려드립니다</p>
+            </div>
+            <div class="leftCardImg">
+              <img src="img/sec06-startup-img/창업절차.png" alt="">
+            </div>
+            <div class="leftCardDesc">
+              <h3>창업절차</h3>
+              <p>세븐일레븐 가맹점 대표님에게<br>성공 신화를 만들어 드립니다.</p>
+            </div>
+            <div class="leftCardImg">
+              <img src="img/sec06-startup-img/창업성공-카드일러.png" alt="">
+            </div>
+            <div class="leftCardDesc">
+              <h3>창업성공기</h3>
+              <p>성공적인 창업, 안정된 매장관리 등<br>우수 점포의 매출 노하우를 <br>한 눈에 알 수 있는 성공스토리를 소개합니다.</p>
+            </div>
+          </div>
+
+          <div class="rightText">
+            <div class="textDesc active">
+              <h3>창업상담</h3>
+              <p>최고의 상품과 서비스로<br>성공 창업을 도와드립니다.</p>
+            </div>
+            <div class="textDesc">
+              <h3>창업설명회</h3>
+              <p>가맹점 오픈에 따른<br>다양한 지원과 혜택을<br>알려드립니다</p>
+            </div>
+            <div class="textDesc">
+              <h3>창업절차</h3>
+              <p>세븐일레븐 가맹점 대표님에게<br>성공 신화를 만들어 드립니다.</p>
+            </div>
+            <div class="textDesc">
+              <h3>창업성공기</h3>
+              <p>성공적인 창업, 안정된 매장관리 등<br>우수 점포의 매출 노하우를 <br>한 눈에 알 수 있는 성공스토리를 소개합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 섹션04 다른 서비스(otherService) -->
+    <section class="otherService">
+      <div class="inner serviceInner">
+        <h2>다른 서비스</h2>
+        <div class="serviceImgWrap">
+          <a href="#"><div class="serviceImg serviceImg1"></div><span>생활편의</span></a>
+          <a href="#"><div class="serviceImg serviceImg2"></div><span>택배서비스</span></a>
+          <a href="#"><div class="serviceImg serviceImg3"></div><span>알뜰폰</span></a>
+          <a href="#"><div class="serviceImg serviceImg4"></div><span>공공요금</span></a>
+          <a href="#"><div class="serviceImg serviceImg5"></div><span>상품권판매</span></a>
+        </div>
+      </div>
+    </section>
+    <!-- 섹션07 공지사항(notice) -->
+    <section class="notice">
+      <div class="inner noticeInner">
+        <!-- 왼쪽공지사항 -->
+        <div class="commonBox noticeBox">
+          <div class="boxInner">
+            <div class="noticeTitle">
+              <h3>공지사항</h3>
+              <a href="#">전체보기<span></span></a>
+            </div>
+            <ul class="noticeDesc">
+              <li><a href="#">
+                <p>시스템 점검 안내</p>
+                <span>2023-05-23</span>
+              </a></li>
+              <li><a href="#">
+                <p>(주)코리아세븐 2023년 1분기 이사회 운영 안내</p>
+                <span>2023-04-03</span>
+              </a></li>
+              <li><a href="#">
+                <p>(주)코리아세븐 2022년도 결산공고</p>
+                <span>2023-03-30</span>
+              </a></li>
+              <li><a href="#">
+                <p>롯데CVS 합병 승인에 따른 채권자 이의 제출 및 주권 제출 공고</p>
+                <span>2022-12-23</span>
+              </a></li>
+            </ul>
+          </div> 
+        </div>
+        <!-- 오른쪽 고객의소리 -->
+        <div class="commonBox customerService">
+          <a href="support.html" class="csLink">
+            <div class="boxInner">
+              <h3>고객의 소리</h3>
+              <p>문의/제안, 불만사항이<br>있으신가요?</p>
+              <span class="customerArrow"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터(footer)시작 -->
+  <footer>
+    <div class="inner footerInner">
+      <!-- 위 -->
+      <div class="topFooter">
+        <ul class="topCustomer">
+          <span>CUSTOMER</span>
+          <li><a href="support.html">고객의소리</a></li>
+          <li><a href="#">채용문의</a></li>
+          <li><a href="#">창업상담</a></li>
+          <li><a href="#">입점문의</a></li>
+        </ul>
+        <ul class="topRecruit">
+          <span>RECRUIT</span>
+          <li><a href="#">기업채용</a></li>
+          <li><a href="#">MATE</a></li>
+          <li><a href="#">윤리핫라인</a></li>
+          <li><a href="#">불공정거래신고</a></li>
+          <li><a href="#">안전·보건핫라인</a></li>
+        </ul>
+      </div>
+      <!-- 아래 내용 -->
+      <div class="bottomFooter">
+        <!-- 왼쪽 로고 -->
+        <div class="footerLogo">
+          <a href="#"><img src="img/header-img/7Eleven-orig.png" alt=""></a>
+        </div>
+        <!-- 중앙 내용 -->
+        <div class="footerDesc">
+          <ul>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+          <span>서울특별시 중구 청계천로 100 시그니처타워 4층 TEL 1577-0711 / FAX 02-2679-6860
+            <br>롯데택배 세븐일레븐 전용 고객센터 : 1688-1211
+            <br>COPYRIGHT 2014 KOREA SEVEN CO, LTD. All Rights Reserved.</span>
+        </div>
+        <!-- 오른쪽 sns랑 사이트 -->
+        <div class="footerSite">
+          <div class="familySite">
+            <input type="checkbox" id="siteCheck">
+            <label for="siteCheck">패밀리사이트 <div>+</div></label>
+            <ul class="siteList">
+              <li><a href="http://www.lotte.co.kr/main.do" target="_blank">롯데그룹</a></li>
+              <li><a href="https://www.lpoint.com/" target="_blank">L.POINT</a></li>
+              <li><a href="https://www.lotteeatz.com/eatzMain">롯데잇츠</a></li>
+              <li><a href="http://lotteconf.co.kr/" target="_blank">롯데제과</a></li>
+              <li><a href="https://company.lottechilsung.co.kr/kor/main/index.do" target="_blank">롯데칠성음료</a></li>
+              <li><a href="https://www.lotteshopping.com/main" target="_blank">롯데백화점</a></li>
+              <li><a href="http://www.e-himart.co.kr/app/display/showDisplayShop?originReferrer=himartindex" target="_blank">롯데하이마트</a></li>
+              <li><a href="https://www.lottecinema.co.kr/NLCHS" target="_blank">롯데시네마</a></li>
+              <li><a href="https://www.lotteimall.com/main/viewMain.lotte#disp_no=5223317" target="_blank">롯데홈쇼핑</a></li>
+              <li><a href="https://store-kr.uniqlo.com/display/displayShop.lecs?storeNo=83&siteNo=50706&displayNo=NQ1A13A07&displayMallNo=NQ1&stonType=P&storeNo=83&siteNo=50706" target="_blank">유니클로</a></li>
+              <li><a href="https://www.lottehotel.com/global/ko.html" target="_blank">롯데호텔</a></li>
+              <li><a href="https://www.lotteworld.com/gate.html" target="_blank">롯데월드</a></li>
+              <li><a href="https://www.lotteins.co.kr/index2.jsp" target="_blank">롯데손해보험</a></li>
+              <li><a href="https://www.lotteins.co.kr/index2.jsp" target="_blank">롯데손해보험</a></li>
+              <li><a href="https://www.lottecard.co.kr/app/LPMAIAA_V100.lc" target="_blank">롯데카드</a></li>
+              <li><a href="https://www.lottecap.com/ma/ma/MAMA00100" target="_blank">롯데케피탈</a></li>
+              <li><a href="https://www.lottecap.com/ma/ma/MAMA00100" target="_blank">롯데케피탈</a></li>
+              <li><a href="https://www.giantsclub.com/html/index.asp?" target="_blank">롯데자이언츠</a></li>
+              <li><a href="https://www.giantsclub.com/html/index.asp?" target="_blank">롯데자이언츠</a></li>
+              <li><a href="https://www.lotteconcerthall.com/kor" target="_blank">롯데콘서트홀</a></li>
+            </ul>
+          </div>
+          <div class="snsSite">
+            <a href="https://www.facebook.com/7elevenkorea/"><img src="img/footer/devicon_facebook.png"></a>
+            <a href="https://twitter.com/seveneleven_kr?t=sLVhWRkj_suMCuaVr1POMw&s=31"><img src="img/footer/skill-icons_twitter.png"></a>
+            <a href="https://www.instagram.com/7elevenkorea/"><img src="img/footer/skill-icons_instagram.png"></a>
+            <a href="https://blog.naver.com/711sns"><img src="img/footer/네이버.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 푸터 끝 -->
+
+  <!-- 제이쿼리 cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- swipe js -->
+  <script src="swiper.js"></script>
+  <!-- js -->
+  <!-- 스크롤 이벤트 js -->
+  <script src="js/mainScrollEventcopy2.js"></script>
+  <!-- 헤더 서브메뉴 -->
+  <script src="js/headerSubmenu.js"></script>
+  <!-- 헤더 반응형 클릭이벤트 -->
+  <script src="js/mobSubmenu.js"></script>
+  <!-- 비주얼 슬라이더 js -->
+  <script src="js/visualSlider2.js"></script>
+  <!-- 상품 슬라이더 js -->
+  <script src="js/productSlider.js"></script>
+  <!-- 창업 카드 js -->
+  <script src="js/startupScrollEventcopy2.js"></script>
+</body>
+</html>
