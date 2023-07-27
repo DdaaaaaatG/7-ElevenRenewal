@@ -1,0 +1,139 @@
+.notice{margin-top: 150px; margin-bottom: 150px;}
+.noticeInner{display: flex; gap: 40px;}
+/* 공통 */
+.noticeInner .commonBox{
+  border-radius: 0 0 60px 60px;
+  width: 600px; height: 300px;
+
+}
+.boxInner{
+  margin: auto; width: 525px;
+  z-index: 999; transition: all 0.3s ease;
+}
+/* 왼쪽 공지사항 */
+.noticeInner .noticeBox{
+  background-color: white;
+  display: flex; align-items: center;
+  filter: drop-shadow(0px 4px 5px rgba(205, 205, 205, 1));
+}
+.noticeBox .noticeTitle{
+  display: flex; justify-content: space-between;
+  margin-bottom: 40px;
+}
+.noticeTitle>h3{font-size: 32px; font-weight: 600;}
+.noticeTitle>a{display: flex;align-items: center; font-size: 17px;}
+.noticeTitle>a>span{
+margin-left: 3px;
+background: url(../../img/sec02-product-img/ic_baseline-plus.png)no-repeat center center;
+background-size: cover;
+width: 17px; height: 17px;
+transform: translateY(-1px);
+}
+.noticeDesc{}
+.noticeDesc>li{margin-bottom: 20px; position: relative;}
+.noticeDesc>li::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  bottom: -20%;
+  height: 3px;
+  background-color: var(--main-color2);
+  transition: all 0.3s ease;
+}
+.noticeDesc>li>a{
+display: flex; justify-content: space-between;
+font-size: 20px;
+}
+.noticeDesc>li>a>p{
+  width: 50%;  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 오른쪽 고객의소리 */
+.noticeInner .customerService{
+  background-color: white;
+  filter: drop-shadow(0px 4px 5px rgba(205, 205, 205, 1));
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.customerService::before{
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: -620px;
+  width: 600px; height: 300px;
+  background: linear-gradient(67deg, #ff9da3 7%, #FFBDC1);
+  pointer-events:none;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+.csLink{
+  display: flex;
+  background: url(../../img/고객센터.png)no-repeat center center;
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+}
+.csLink>.boxInner{
+  margin: auto;
+  width: 525px;
+}
+.csLink>.boxInner>h3{
+  font-size: 35px;
+  font-weight: 600;
+}
+.csLink>.boxInner>p{
+  font-size: 24px;
+}
+.csLink>.boxInner>.customerArrow{
+  position: relative;
+  margin-top: 20px;
+  display: inline-block;
+  width: 26px;
+  height: 12px;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.customerArrow::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  transform: translateY(-50%) rotate(45deg);
+}
+.customerArrow::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  transform: translateY(-50%);
+}
+/* 공지사항 호버 */
+.noticeDesc>li:hover::after{
+  width: 100%;
+}
+/* 화살표 호버 */
+.customerService:hover .customerArrow{
+  width: 106px;
+}
+/* 카드 배경 호버 */
+.customerService:hover::before{left: 0px; }
+/* 호버시 글씨 색 */
+.customerService:hover .boxInner, 
+.customerService:hover .customerArrow::before,
+.customerService:hover .customerArrow::after
+{color: #fff; border-color: #fff;}
+.customerService:hover 
+{
+  filter: drop-shadow(0px 4px 5px #FFBDC1);
+}

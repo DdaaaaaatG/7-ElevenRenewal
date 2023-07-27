@@ -1,0 +1,152 @@
+@import url(resHeader.css);
+@import url(resVisual.css);
+@import url(resProduct.css);
+
+@media screen and (max-width : 965px){
+  .inner{width: 90%;}
+  /* 도시락 */
+.packLuchBg{
+    width: 965px; height: 600px;
+    background: url(../../img/sec03-lunch-img/반응형.png)no-repeat center center;
+}
+.packDesc{right: 8%; }
+.packDesc>h2{font-size: var(--h2-size);}
+.packDesc>h2::before{
+  content: '';
+  position: absolute;
+  width: 350px; height: 4px;
+  background-color: var(--point-color);
+  bottom: 0px;
+  right: 0;
+}
+.packDesc>p{
+  font-size: var(--h4-size);
+}
+  /* 매장검색 */
+.searchInner{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+.search {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.searchWrap{transform: translateX(0%);}
+.leftSearch{flex: .2;}
+.rightSearch{
+  flex: .5; 
+  background-size: cover;
+}
+
+
+/* 스타트업 */
+.startup {
+  text-align: center;
+  margin-top: 200px;
+}
+.contentsWrap{
+  flex-direction: column;
+  align-items: center;
+}
+.leftCard{  height: 5200px;}
+.leftCardDesc{
+  display: block;
+  text-align: center; 
+  width: 426px; height: 135px;
+  margin-top: 100px;
+}
+.leftCardDesc>h3{font-size: var(--h3-size); font-weight: 600;}
+.leftCardDesc>p{font-size: var(--h4-size);}
+
+.rightText{
+  display: none;
+  position:static; 
+}
+
+/* 다른서비스 */
+.otherService{margin-top: 300px;}
+.serviceInner .serviceImgWrap {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  justify-content: center;
+}
+.serviceInner .serviceImgWrap>a:nth-child(4), .serviceInner .serviceImgWrap>a:nth-child(5){transform: translateX(102%);}
+/* 공지사항 */
+.noticeInner{flex-direction: column; align-items: center; gap: 40px;}
+
+/* 푸터 */
+footer{height: 456px;}
+.topFooter{
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px;
+  transform: translateY(70%);
+}
+.bottomFooter{
+  flex-direction: column; 
+  align-items: center; 
+  gap: 30px;
+}
+.footerDesc {
+  gap: 10px;
+}
+.footerDesc>ul {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+}
+.footerDesc>span {
+  line-height: 1.5;
+  text-align: center;
+}
+.footerSite {
+  margin-left: 0;
+  gap: 20px;
+}
+.footerSite>.familySite>.siteList {
+  right: 1px;
+  bottom: 69px;
+}
+.footerSite>.familySite {
+  margin-left: 0;
+  margin: auto;
+}
+}
+
+
+@media screen and (max-width : 618px){
+.inner{width: 90%;}
+  /* 도시락 */
+.packLuchBg{
+    width: 618px; height: 450px;
+    background: url(../../img/sec03-lunch-img/반응형2.png)no-repeat center center;
+}
+.packDesc{right: 8%; bottom: 50px;}
+
+  /* 공지사항 */
+.noticeInner{gap: 40px;}
+.noticeInner .commonBox{
+  border-radius: 0 0 40px 40px;
+  width: 480px; height: 250px;
+}
+.boxInner{width: 455px;}
+.noticeBox .noticeTitle {margin-bottom: 30px;}
+.noticeTitle>h3{font-size: 25px;}
+.noticeTitle>a{font-size: 15px;}
+.noticeDesc>li {margin-bottom: 10px;position: relative;}
+.noticeDesc>li::after{height: 2px;}
+.noticeDesc>li>a {font-size: 18px;}
+.csLink{  width: 480px; height: 250px;}
+.csLink>.boxInner{transform: translateY(-8%); margin-left: 40px;}
+.csLink>.boxInner>h3 {font-size: 28px;}
+.csLink>.boxInner>p {font-size: 20px;}
+/* 푸터 */
+.topFooter>.topCustomer, .topFooter>.topRecruit {
+    gap: 5px;
+}
+.topCustomer>li::after{right: -4px;}
+.topRecruit>li::after{right: -3px;}
+}

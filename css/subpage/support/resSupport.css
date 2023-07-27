@@ -1,0 +1,101 @@
+@media screen and (max-width : 965px){
+  .inner{width: 90%;}
+  /* search */
+.csSearchWrap{height: 279px;transform: translateX(-5%);}
+.csSearchWrap>h2{
+  transform: translateX(100%);
+  width: auto;
+  font-size: 30px; font-weight: bold;}
+.csSearchBar{width: 70vw; }
+.csSearchBar input[type="text"]{
+  transform: translateX(30%);
+  width: 50vw; height: 50px; }
+}
+
+@media screen and (max-width : 740px){
+  .inner{width: 90%;}
+  .csSearchWrap{height: 279px;transform: translateX(-5%);}
+  .csSearchWrap>h2{
+    transform: translateX(100%);
+    width: auto;
+    font-size: 22px; font-weight: bold;}
+  .csSearchBar{width: 70vw; }
+  .csSearchBar input[type="text"]{
+    transform: translateX(30%);
+    width: 45vw; height: 40px; font-size: 16px;}
+  .csSearchBar input[type="submit"]{
+    width: 40px; height: 40px; 
+    background-size: cover;
+  }
+  /* faq */
+  .csFaq{
+    margin-top: 10px; margin-bottom: 100px;
+  }
+
+
+
+  .csButtonSection{margin-top: 100px; margin-bottom: 100px;}
+  .csButtonSectionInner{flex-direction: column; gap: 100px;}
+  /* 아이콘 */
+  .csLocalBtnSection{height: auto; margin-top: 100px; margin-bottom: 100px;}
+  .csLocalBtnIconWrap{flex-direction: column; align-items: center; gap: 30px;}
+  .csLocalBtnIconWrap>li{
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border: 1px solid #dddcdc;
+  }
+  .csLocalBtnIconWrap>li::after{
+    display: none;
+  }
+}
+
+@media screen and (max-width : 580px){
+  .inner{width: 90%;}
+  .csSearchWrap{height: 279px;transform: translateX(-5%);}
+  .csSearchWrap>h2{
+    transform: translateX(100%);
+    width: auto;
+    font-size: 20px; font-weight: bold;}
+  .csSearchBar{width: 70vw; }
+  .csSearchBar input[type="text"]{
+    transform: translateX(35%);
+    width: 43vw; height: 38px; font-size: 16px;
+    text-indent: 10px;
+  }
+  .csSearchBar input[type="submit"]{
+    width: 35px; height: 35px; 
+    background-size: cover;
+  }
+  /* faq title */
+  .csFaqTitle{
+    width: 100%; position: static;
+    display: flex; 
+    flex-direction: column;
+    padding: 2rem 0;
+    margin-bottom: 30px;
+    gap: 8px;
+  }
+  .csFaqTitle>h3{font-size: 30px; font-weight: bold;}
+  .csFaqTitle>a{
+    position: static;
+    display: flex;align-items: center; font-size: 17px;}
+  .csFaqTitle>a>span{
+  margin-left: 3px;
+  background: url(../../../img/sec02-product-img/ic_baseline-plus.png)no-repeat center center;
+  background-size: cover;
+  width: 17px; height: 17px;
+  transform: translateY(-1px);
+  }
+  /* faq */
+ 
+
+  /* 카드섹션 */
+  .csButtonSectionInner>.leftCs>.leftCsImg{width: 280px; height: 195px;}
+  .csButtonSectionInner>.leftCs>.leftCsText>h3, .csButtonSectionInner>.rightCs>.rightCsText>h3{font-size: 20px;}
+  .csButtonSectionInner>.leftCs>.leftCsText>p, .csButtonSectionInner>.rightCs>.rightCsText>p{font-size: 16px; margin-top: 15px;}
+  .csButtonSectionInner>.rightCs>.rightCsImg{
+    background: url(../../../img/subPage/support/imgOnlinesmall-편집.png)no-repeat center center;
+    background-size: cover;
+    width: 280px; height: 195px;}
+}

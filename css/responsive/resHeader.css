@@ -1,0 +1,57 @@
+@media screen and (max-width : 1330px){
+  .headerDesktop{
+    width: 90%;
+  }
+  .headerGnb>.destopGnb>li{
+    width: 130px;
+  }
+  .lnb>li{width: 130px; position: relative;}
+}
+
+@media screen and (max-width : 1165px){
+  .headerLogo{width: 150px; height: 20px;}
+  .headerLogo>a>img{width: 150px; height: 20px; object-fit: contain;}
+  .headerDesktop{
+  }
+  .headerGnb>.destopGnb>li{
+    width: 100px;
+  }
+  .lnb{top: 160px;}
+  .lnb>li{width: 100px; position: relative;}
+  .lnb>li>a{font-size: 14px;}
+  .headerGnb>.destopGnb>li>a{font-size: var(--p-size);}
+  .lnb>li>a{font-size: 14px;}
+  .language>li>a{
+    font-size: 14px; 
+  }
+}
+@media screen and (max-width : 965px){
+  
+  html, body {width:100%; max-width: 100%;
+    overflow-x: hidden;}
+/* 모바일 수평 스크롤 금지 */
+
+  .headerDesktop{
+    display: none;
+  }
+  header{
+    height: 100px;
+  }
+  /* 스크롤시 헤더 액티브 */
+  header.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 99999;
+    background-color: rgba(230, 229, 229, 0.4);
+    backdrop-filter: blur(10px);
+  }
+  .mobileGnb{
+    display: flex;
+  }
+  .mobileGnb.active{
+    height: 90px;
+  }
+}

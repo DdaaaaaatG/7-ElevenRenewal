@@ -1,0 +1,41 @@
+.search{margin-top: 400px; margin-bottom: 300px;}
+.searchInner{display: flex;height: auto;align-items: center;}
+/* 왼쪽 설명 */
+.leftSearch{flex: 1;}
+.searchWrap{transform: translateX(20%);}
+.leftSearch .searchWrap .leftDesc{text-align: left;}
+.leftSearch .searchWrap .leftDesc>h2,.leftSearch .searchWrap .leftDesc>h2>span{font-size: var(--h2-size); font-weight: bold;}
+.leftSearch .searchWrap .leftDesc>h2>span:nth-child(1),.leftSearch .searchWrap .leftDesc>h2>span:nth-child(4){color: var(--main-color);}
+.leftSearch .searchWrap .leftDesc>h2>span:nth-child(2){
+  color: var(--point-color2);}
+.leftSearch .searchWrap .leftDesc>h2>span:nth-child(3){
+  color: var(--red-color3);}
+.leftSearch .searchWrap .leftDesc>p{font-size: 28px;}
+/* 왼쪽 검색창 */
+.nearSearch{position: relative;}
+.nearSearch .nearSearchBar{
+  display: flex;
+  width: 419px; 
+  padding: 10px 0; 
+  border-bottom: 6px solid #000;}
+.nearSearch .nearSearchBar input[type="text"]{
+  width: 419px; height: 30px;  
+  font-size: var(--p-size); color: black; background-color: white;
+  text-indent:2px; 
+}
+.nearSearch .nearSearchBar input::placeholder{color: black;}
+.nearSearch .nearSearchBar input[type="submit"]{
+  width: 25px; height: 25px; 
+  background: url(../../img/sec05-search-img/ion_search.png)no-repeat center center;
+  background-size: cover;
+  font-size: 0;
+  cursor: pointer;
+}
+
+/* 오른쪽 건물 이미지 */
+.rightSearch{flex: 1; 
+  width: 620px;
+  height: 410px;
+  background: url(../../img/sec05-search-img/img_cu_store\ 2.png)no-repeat center center;
+  background-size: cover;
+}

@@ -1,0 +1,32 @@
+.packLunch{position: relative;}
+/* 배경이미지 */
+.packLuchBg{
+  width: 1980px; height: 700px;
+  margin: 0 auto;
+  background: url(../../img/sec03-lunch-img/lunch5.png)no-repeat center center;
+  background-size: cover;
+}
+/* 텍스트 영역 */
+
+.packDesc{
+  position: absolute; color: white;
+  right: 17%; 
+  bottom: 100px;
+  text-align: right;
+}
+.packDesc>h2{
+  font-size: var(--h1-size);
+  font-weight: bold;
+  position: relative;
+}
+.packDesc>h2::before{
+  content: '';
+  position: absolute;
+  width: 450px; height: 4px;
+  background-color: var(--point-color);
+  bottom: 0px;
+  right: 0;
+}
+.packDesc>p{
+  font-size: var(--h3-size);
+}

@@ -1,0 +1,65 @@
+/* 리셋 */
+@import url(reset.css);
+/* 본문 */
+@import url(header/header.css);
+@import url(section/sec01Visual.css);
+@import url(section/sec02Product.css);
+@import url(section/sec03Lunch.css);
+@import url(section/sec04Other.css);
+@import url(section/sec05Search.css);
+@import url(section/sec06Startup.css);
+@import url(section/sec07Notice.css);
+@import url(footer/footer.css);
+/* 모든 섹션에 페이드인 */
+
+.container{overflow-y: hidden;}
+
+.packLunch,
+.otherService,
+.search,
+.notice{
+  transform: translateY(10%);
+  transition: .4s;
+  opacity: 0;
+}
+.fade-in{
+  transform: translateY(0%);
+  transition: .4s;
+  opacity: 1;
+}
+.startupHeadText{
+  transform: translateY(15%);
+  transition: .4s;
+  opacity: 0;
+}
+.startupHeadText.fade-in{
+  transform: translateY(10%);
+  opacity: 1;
+}
+.leftCard{
+  transform: translateY(2%);
+  transition: .8s;
+  opacity: 0;
+}
+.leftCard.fade-in{
+  transform: translateY(0);
+  opacity: 1;
+}
+.rightText{
+  transform: translateY(7%);
+  transition: .8s;
+  opacity: 0;
+}
+.rightText.fade-in{
+  transform: translateY(5%);
+  opacity: 1;
+}
+.packDesc{
+  transform: translateX(10%);
+  transition: .4s;
+  opacity: 0;
+}
+.packDesc.fade-in{
+  transform: translateX(0%);
+  opacity: 1;
+}

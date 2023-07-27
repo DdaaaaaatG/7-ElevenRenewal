@@ -1,0 +1,262 @@
+/* lnb */
+.productContentInner{
+  margin-top: 34px;
+}
+.contentWrap{
+  display: flex;
+  gap: 42px;
+  align-items: flex-start;
+  position: relative;
+}
+/* 왼쪽 */
+.contentLeft{
+  width: 179px;
+  position: sticky;
+  top: 18%;
+  height: auto;
+}
+.contentLeft>.productLnb{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contentLeft>.productLnb>li>a{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+.contentLeft>.productLnb>li>a.on{
+  color: var(--main-color);
+}
+.contentLeft>.productLnb>li:hover a{
+  color: var(--main-color);
+}
+/* 오른쪽 */
+.contentRight{
+  margin-top: 15px;
+  width: calc(100% - 179px);
+}
+.contentRight>.productTitle{margin-bottom: 24px;}
+.contentRight>.productTitle>h2{font-size: 32px; font-weight: bold;}
+.contentRight>.productTitle>p{font-size: 20px; margin-top: 4px;}
+
+/* 상품검색 */
+
+.productSearchWrap{
+  display: grid;
+  grid-template-columns: 80% 19%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+  "searchRadio productSearchBtn"
+  "productSearch productSearchBtn";
+  gap: 10px;
+}
+/* 공통부분 */
+.searchRadio>p , .productSearch>p{
+  font-size: 18px;
+  font-weight: bold;
+}
+/* 공통부분 끝 */
+/* 가격대 검색 */
+.searchRadio{
+  display: flex;
+  grid-area: searchRadio;
+  gap: 30px;
+  align-items: center;
+}
+.searchRadio>ul{
+  display: flex;
+  gap: 10px;
+}
+.searchRadio>.radioSearchWrap{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.searchRadio>.radioSearchWrap input[type=text]{
+  width: 105px; height: 27px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  text-indent: 5px;
+}
+/* 통합검색 */
+.productSearch{ 
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  grid-area: productSearch;
+}
+.productSearch>.productSearchBar{
+  display: flex;
+
+}
+.productSearch>.productSearchBar input[type=text]{
+  width: 705px;height: 27px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  text-indent: 5px;
+}
+/* 검색버튼 */
+.productSearchBtn{
+  grid-area: productSearchBtn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productSearchBtn input[type=submit]{ 
+  width: 100%; height: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 상품목록 */
+.productItems{
+  width: 1025px;
+  height: auto;
+}
+.productItems>.productGridWrap{}
+.productItems>.productGridWrap>li{
+  width: 23%;
+  height: 340px;
+  cursor: pointer;
+  background: #fff;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 22px;
+  transition: padding 0.34s ease-in-out;
+  float: left;
+  margin-right:20px;
+  margin-top: 24px;
+}
+.productItems>.productGridWrap>li:nth-child(4n+0){
+  margin-right:0px;
+  float: left;
+  margin-top: 20px;
+}
+.productItems>.productGridWrap>li:nth-child(4n+1)
+{clear: both;}
+.productItems>.productGridWrap>li>.productItemWrap{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  background-color: white;
+}
+
+.productItemWrap>.proItemImg{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productItemWrap>.proItemImg>img{
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  object-position: center;
+  transform: scale(1);
+  transition: transform 0.34s ease-in-out;
+}
+.productItemWrap>.proTextWrap{
+  width: 100%;  display: flex; flex-direction: column;
+  align-items: center;
+}
+.productItemWrap>.proTextWrap>.proTextTitle,.productItemWrap>.proTextWrap>.proTextPrice
+{font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+.productItemWrap>.proTextWrap>.proTextTitle{
+  height: 41px;
+  width: 100%;
+}
+.productItemWrap>.proTextWrap>.proTextTitle>p{width: 100%;
+  max-height: 41px; display: block; text-align: center;}
+.proTextWrap>.proTextPrice{height: 29px;}
+.proTextWrap>.proTextPrice>p>span{font-size: 18px; font-weight: bold;text-align: center;}
+.proTextWrap>.proTextPrice>p{text-align: center;}
+/* 페이저 */
+.pagenationWrap{
+  height: 180px;
+  clear: both;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.pagenationWrap>.prevButtons{display: flex;  align-items: center;}
+.pagenationWrap>.prevButtons>.pvButton{
+  background: url(../../../img/subPage/product/icon-park-outline-left.png)no-repeat center center;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  cursor: pointer;
+}
+.pagenationWrap>.prevButtons>.pvDoubleButton{
+  background: url(../../../img/subPage/product/icon-park-outline_double-left.png)no-repeat center center;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.pagenationWrap>.pagenation{display: flex; font-size: 20px; gap: 30px;}
+.pagenationWrap>.pagenation>li{cursor: pointer;}
+.pagenationWrap>.pagenation>li.focusOn{color: var(--main-color); font-weight: bold;}
+.pagenationWrap>.pagenation>li>span{display: block;}
+
+.pagenationWrap>.nextButtons{display: flex; align-items: center;}
+.pagenationWrap>.nextButtons>.ntButton{
+  background: url(../../../img/subPage/product/icon-park-outline-left.png)no-repeat center center;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.pagenationWrap>.nextButtons>.ntDoubleButton{
+  background: url(../../../img/subPage/product/icon-park-outline_double-left.png)no-repeat center center;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+/* 호버이벤트 */
+.productItems>.productGridWrap>li:hover{
+  background: linear-gradient(45deg, #50e281,#fad46c);
+  /* background: linear-gradient(45deg, #e25550,#fac16c); */
+  padding: .5rem;
+  border: none;
+}
+.productItems>.productGridWrap>li:hover img{
+  transform: scale(1.1);
+}
+.pagenationWrap>.pagenation>li:hover{color: var(--main-color);}
+.pagenationWrap>.prevButtons>.pvButton:hover, .pagenationWrap>.nextButtons>.ntButton:hover{
+  background: url(../../../img/subPage/product/icon-park-outline-left-green.png)no-repeat center center;
+  background-size: cover;
+}
+.pagenationWrap>.prevButtons>.pvDoubleButton:hover, .pagenationWrap>.nextButtons>.ntDoubleButton:hover{
+  background: url(../../../img/subPage/product/icon-park-outline_double-left-green.png)no-repeat center center;
+  background-size: cover;
+}

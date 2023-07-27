@@ -1,0 +1,62 @@
+@media screen and (max-width : 1330px){
+  .visual{width: 100%; max-width: 1330px;height: 670px;  
+    position: relative; margin: 0 auto; 
+
+    overflow-x: hidden;
+  }
+  /* max-width / width 값 통일. visualSlider에 히든 및 x축 0px */
+  .visualSlider{
+    z-index: -1; transform:translateX(0px);  }
+  .sliderBanner{
+    display: flex; gap: 40px; transition: .4s; position: relative;}
+  .sliderBanner>li{
+    width: 1330px; height: 620px;}
+  .sliderBanner>li>a>.visualImg{width: 1330px; height: 620px;}
+}
+@media screen and (max-width : 750px){
+  .visual{width: 100%; max-width: 750px;height: 600px;  
+    position: relative; margin: 0 auto; 
+    overflow-x: hidden;
+  }
+  /* max-width / width 값 통일. visualSlider에 히든 및 x축 0px */
+  .visualSlider{
+    z-index: -1; transform:translateX(0px);}
+  .sliderBanner{
+    display: flex; gap: 40px; transition: .4s; position: relative;}
+  .sliderBanner>li{
+    width: 750px; height: 550px;}
+  .sliderBanner>li>a>.visualImg{width: 750px; height: 550px;}
+  .sliderBanner>li>a>.visualImg01{
+    background: url(../../img/sec01-visual-img/반응형/편집01.png) no-repeat center center;
+    background-size: cover; 
+  }
+  .sliderBanner>li>a>.visualImg02{
+    background: url(../../img/sec01-visual-img/반응형/편집02.jpg) no-repeat center center;
+    background-size: cover; 
+  }  .sliderBanner>li>a>.visualImg03{
+    background: url(../../img/sec01-visual-img/반응형/편집03.jpg) no-repeat center center;
+    background-size: cover; 
+  }  .sliderBanner>li>a>.visualImg04{
+    background: url(../../img/sec01-visual-img/반응형/편집04.jpg) no-repeat center center;
+    background-size: cover; 
+  }  .sliderBanner>li>a>.visualImg05{
+    background: url(../../img/sec01-visual-img/반응형/편집05.jpg) no-repeat center center;
+    background-size: cover; 
+  }
+}
+
+@media screen and (max-width : 510px){
+  .visual{width: 100%; max-width: 510px;height: 500px;  
+    position: relative; margin: 0 auto; 
+    overflow-x: hidden;
+  }
+  /* max-width / width 값 통일. visualSlider에 히든 및 x축 0px */
+  .visualSlider{
+    z-index: -1; transform:translateX(0px);}
+  .sliderBanner{
+    display: flex; gap: 40px; transition: .4s; position: relative;}
+  .sliderBanner>li{
+    width: 510px; height: 480px;}
+  .sliderBanner>li>a>.visualImg{width: 510px; height: 480px; }
+
+}

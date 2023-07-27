@@ -1,0 +1,51 @@
+@media screen and (max-width : 965px){
+.inner{width: 90%;}
+/* 푸터 */
+footer{height: 456px;}
+.topFooter{
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px;
+  transform: translateY(70%);
+}
+.bottomFooter{
+  flex-direction: column; 
+  align-items: center; 
+  gap: 30px;
+}
+.footerDesc {
+  gap: 10px;
+}
+.footerDesc>ul {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+}
+.footerDesc>span {
+  line-height: 1.5;
+  text-align: center;
+}
+.footerSite {
+  margin-left: 0;
+  gap: 20px;
+}
+.footerSite>.familySite>.siteList {
+  right: 1px;
+  bottom: 69px;
+}
+.footerSite>.familySite {
+  margin-left: 0;
+  margin: auto;
+}
+}
+
+
+@media screen and (max-width : 618px){
+.inner{width: 90%;}
+/* 푸터 */
+.topFooter>.topCustomer, .topFooter>.topRecruit {
+    gap: 5px;
+}
+.topCustomer>li::after{right: -4px;}
+.topRecruit>li::after{right: -3px;}
+}

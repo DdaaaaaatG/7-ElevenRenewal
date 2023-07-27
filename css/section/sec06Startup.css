@@ -1,0 +1,49 @@
+.startup{
+  text-align: center;
+  margin-top: 400px;
+  
+}
+
+.startupInner>div{}
+.startupHeadText{color: rgb(63, 63, 63);height: 700px;}
+.startupHeadText>h2{font-size: var(--h2-size); font-weight: 600;}
+.startupHeadText>p{font-size: var(--h3-size); font-weight:100;}
+/* 카드wrap */
+.contentsWrap{display: flex; justify-content: center; gap: 100px;align-items: flex-start;  position: relative;
+  /* flex인 상태에서 sticky를 줄려면 align-items: flex-start; 를 줘야함. 
+  이유는 flex박스의 align-items은 기본 값으로 stretch로 되어 있어 고정 요소가 컨테이너의 전체 높이를 차지하기 때문에 고정 되지 x
+  */
+  margin-top: 100px;
+}
+/* 카드부분 */
+.leftCard{  height: 4000px;}
+.leftCard>.leftCardImg{
+  width: 426px; height: 585px;
+  border-radius: 50px; overflow: hidden;
+  margin-top: 50vh;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.leftCard>div:first-child{
+  margin-top:0;
+}
+.leftCard>.leftCardImg{display: block;}
+.leftCard>.leftCardImg>img{width: 426px; height: 585px; object-fit: cover;}
+.leftCardDesc{display: none;}
+/* 텍스트 부분 (스크롤 내려갈시 내용달라짐) */
+.rightText{
+  position:sticky; 
+  top: 50%;
+}
+.rightText>.textDesc{
+  display: none; text-align: center; 
+  width: 450px; height: 135px;
+  color: rgb(63, 63, 63);
+  margin-bottom: 450px;
+}
+.rightText>.textDesc>h3
+{font-size: var(--h3-size); font-weight: 600;}
+.rightText>.textDesc>p
+{font-size: var(--h4-size);}
+
+/* 스크롤 액티브 트리거 */
+.rightText>.textDesc.active{display: block;}

@@ -1,0 +1,125 @@
+.productEvent{
+  margin: 8rem 0;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.tab_wrap{
+  display: flex;
+  flex-direction: row;
+}
+/* 탭메뉴 제목 */
+.productLnb>.productTitle{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productLnb>.productTitle>h2{
+  font-size: 40px;
+  font-weight: bold;
+}
+.plusButton>a{display: flex; margin-bottom: 15px;}
+.plusButton>a>span{font-size: 20px; }
+.plusButton>a>.plusIcon{
+  margin-left: 5px;
+  background: url(../../img/sec02-product-img/ic_baseline-plus.png)no-repeat center center;
+  background-size: cover;
+  width: 24px; height: 25px;
+
+}
+/* 탭메뉴 */
+
+.tit_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tit_list > li {
+  width: 200px;
+  transition: .3s;
+}
+.tit_list > li a {
+  display: block;
+  font-size: 24px;
+  padding: 1rem 2rem;
+}
+
+/* 호버와 액티브 */
+.tit_list > li:nth-child(1):hover a, .tit_list > li:nth-child(4):hover a,
+.tit_list > li:nth-child(1).active a,.tit_list > li:nth-child(4).active a { 
+  background-color: var(--main-color);
+  border: none;
+  box-shadow: 0px 4px 4px 0px var(--main-color);
+  color: #fff;
+  font-weight: bold;
+}
+.tit_list > li:nth-child(2).active a,.tit_list > li:nth-child(2):hover a {
+  background-color: var(--point-color);
+  box-shadow: 0px 4px 4px 0px var(--point-color);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+.tit_list > li:nth-child(3).active a,.tit_list > li:nth-child(3):hover a{
+  background-color: var(--red-color);
+  box-shadow: 0px 4px 4px 0px var(--red-color);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+/* 슬라이드 */
+.tab_con {
+  flex: 1;
+  display: flex;
+}
+.tab_con .tab_list {
+  flex: 1;
+  display: none;
+}
+
+.slider {
+  flex: 1 !important;
+  position: relative;
+}
+.slider .tabInner {
+  overflow: hidden;
+  width: 100%;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.slide_list > li {
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.slide_list > li>a{
+  display: flex; 
+  justify-content: center; align-items: center;
+  flex-direction: column;
+  border: 1px solid #c9c9c9;
+  border-radius: 50px 0 80px 0;
+  width: 230px;
+  height: 300px;
+  background-color: white;
+}
+.slide_list > li>a>img{
+  width: 156px;
+  height: 156px;
+  object-fit: cover;
+}
+/* 버튼 */
+.tab_con>.tab_list>.slider .paginationCount{
+  width: auto;
+  position: absolute;
+  top: 336px;
+  left: 490px;
+  z-index: 999;
+}
+.tab_list>.slider .paginationCount>span{
+  margin-right: 10px;
+  background-color: var(--main-color);
+}

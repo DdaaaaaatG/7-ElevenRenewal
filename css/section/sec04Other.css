@@ -1,0 +1,66 @@
+.otherService{margin-top: 500px;}
+.serviceInner{
+  height: auto;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.serviceInner>h2{font-size: 30px; font-weight: bold; transform: translateY(-10%);}
+.serviceInner .serviceImgWrap{
+  display: flex; justify-content: center;
+  gap: 100px;
+}
+/* 스프라이트 이미지 */
+.serviceInner .serviceImgWrap>a{
+  width: 80px;
+  height: auto; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;}
+.serviceInner .serviceImgWrap>a>.serviceImg{
+  background: url(../../img/sec04-other-img/sprite.png)no-repeat center center;
+  background-position: -18px -22px;
+  width: 67px;
+  height: 65px;
+  transition: .3s;
+}
+.serviceInner .serviceImgWrap>a>.serviceImg2{
+  background-position: -223px -23px;
+}
+.serviceInner .serviceImgWrap>a>.serviceImg3{
+  background-position: -415px -23px;
+}
+.serviceInner .serviceImgWrap>a>.serviceImg4{
+  background-position: -605px -22px;
+}
+.serviceInner .serviceImgWrap>a>.serviceImg5{
+  background-position: -800px -18px;
+}
+.serviceInner .serviceImgWrap>a>span{
+  font-size: 18px;
+  font-weight: lighter;
+  transition: .1s;
+}
+/* 호버 */
+.serviceInner .serviceImgWrap>a:hover .serviceImg1{
+  background-position: -18px -139.5px;
+}
+.serviceInner .serviceImgWrap>a:hover .serviceImg2{
+  background-position: -223px -140.5px;
+}
+.serviceInner .serviceImgWrap>a:hover .serviceImg3{
+  background-position: -415px -140.5px;
+}
+.serviceInner .serviceImgWrap>a:hover .serviceImg4{
+  background-position: -605px -139.5px;
+}
+.serviceInner .serviceImgWrap>a:hover .serviceImg5{
+  background-position: -800px -135.5px;
+}
+
+.serviceInner .serviceImgWrap>a:hover span{
+  color: #51B25D;
+}
