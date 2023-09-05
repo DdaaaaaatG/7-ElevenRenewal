@@ -5,8 +5,8 @@ window.addEventListener('scroll', function() {
   let windowHeight = window.innerHeight;
   let scrollY = window.scrollY || window.pageYOffset;
   let activeIndex = -1; //스크롤 범위 이전 확인용
-  // console.log("scrollY"+scrollY);
-  if (scrollY >= 4100) {
+
+  if (scrollY >= 4500) {
 
     // 각 이미지 요소의 위치 정보.
     let topOffsets = Array.from(leftImg).map(img => Math.floor(img.getBoundingClientRect().top)/2); //카드 기준 상단 값이니까.. 그것에 반을 나누고 +500하면 됨.
