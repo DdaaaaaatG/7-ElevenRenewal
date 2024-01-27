@@ -37,6 +37,41 @@ dom 이벤트를 기반으로 실행하는 자바스크립트는, 성능상의 �
 
 ## 👀 페이지 구성
 ### 메인 페이지
+  |섹션1 : 이벤트 배너|
+  |:---|
+  |![무한](https://github.com/DdaaaaaatG/7-ElevenRenewal/assets/85141928/722db291-a975-420d-87ca-7a3bfed6c67d)|
+  |스와이퍼를 사용하지 않고 Javascript로만 구현을한 무한 슬라이드 입니다.|
 
+<br>
+
+  |섹션2 : 행사상품|
+  |:---|
+  |![아이템](https://github.com/DdaaaaaatG/7-ElevenRenewal/assets/85141928/7e4af5fc-55be-4b22-87bd-9e2c6e26104e)|
+  |스와이퍼를 커스텀하여 탭메뉴 및 자동 슬라이드를 구현했습니다.|
+  
+<br>
+
+  |섹션5 : 창업문의|
+  |:---|
+  |![카드](https://github.com/DdaaaaaatG/7-ElevenRenewal/assets/85141928/8818128c-5a59-4642-b3a1-be86a1a48afb)|
+  |직접 그린 일러스트에 스크롤 이벤트 및 stiky 효과를 줬습니다.|
 ### 서브 페이지
+<br>
 
+  |전체상품 페이지|
+  |:---|
+  |![스크롤](https://github.com/DdaaaaaatG/7-ElevenRenewal/assets/85141928/3cc69c47-759c-45ab-8af6-8193d56531db)|
+  |마우스 호버시 이미지에 scale을 넣어 점점 커지며, 이미지 뒤에 입력한 background-color가 테두리 선처럼 보이도록 구성하였습니다.|
+  
+<br>
+
+  |고객센터 페이지|
+  |:---|
+  |![Untitled](https://github.com/DdaaaaaatG/7-ElevenRenewal/assets/85141928/76c6b8c9-0625-4b22-a9da-babd60f4f958)|
+  |자주묻는 질문 섹션에 아코디언을 넣어 답변을 펼쳐 볼 수 있도록 구현했습니다.|
+
+## 🚀 기타 링크
++  [Figma 와이어 프레임](https://www.figma.com/file/fEkKM6Gw5suLv4G0tE2ulV/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%94%94%EC%9E%90%EC%9D%B8?type=design&node-id=0%3A1&mode=design&t=DP6tmb9SnanCpPSh-1)
++  [Figma 카드 일러스트](https://www.figma.com/file/tXUZXSnWD5kG3lQgNQfWNy/%EC%84%B8%EB%B8%90%EC%9D%BC%EB%A0%88%EB%B8%90-%EC%B9%B4%EB%93%9C-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8?type=design&node-id=0%3A1&mode=design&t=oVfx7oy1mPSg5LDx-1)
++  [프레젠테이션 중간 발표](https://docs.google.com/presentation/d/1SysTNB8tm-DmjwN48-Ao1Z6gtebJX4jPg94qzHDp6FI/edit)
++  [프레젠테이션 최종 발표](https://docs.google.com/presentation/d/1XIv4Mq2oN8GUTdhhUQpagEDEXziDLEkcr8Och6_XowQ/edit)
